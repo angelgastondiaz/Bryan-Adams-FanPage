@@ -75,10 +75,25 @@ body{
     background-color: #F29F05;
     padding: 5px 0px 5px 0px;
 }
+.caja h2{
+    color: #590202;
+    background-color: #F29F05;
+    padding: 5px 0px 5px 0px;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+.caja h3{
+    color: #590202;
+    background-color: #F29F05;
+    padding: 5px 0px 5px 0px;
+}
+
 .caja-img{
     padding: 15px 0px 10px 0px;
 }
-
+p{
+    padding: 10px 20px 0px 20px;
+}
 /* ESTILO BIOGRAFIA */
 
 .portada2{
@@ -113,16 +128,12 @@ body{
     padding: 5px 0px 5px 0px;
 }
 .caja2 p{
-    padding: 10px 20px 0px 20px;
+    padding: 30px 30px 0px 30px;
 }
 
 /* ESTILO DISCOGRAFIA */
 
-.caja h1{
-    color: #590202;
-    background-color: #F29F05;
-    padding: 5px 0px 5px 0px;
-}
+
 .caja3{
     width: 250px;
     height: 600px;
@@ -132,12 +143,23 @@ body{
     margin: 10px;
 }
 .caja3 h1{
-    font-size: 30px;
+    font-size: 20px;
     color: #590202;
     background-color: #F29F05;
     padding: 5px 0px 5px 0px;
 }
-
+.caja3 h2{
+    font-size: 20px;
+    color: #590202;
+    background-color: #F29F05;
+    padding: 5px 0px 5px 0px;
+}
+.caja3 h3{
+    font-size: 20px;
+    color: #590202;
+    background-color: #F29F05;
+    padding: 5px 0px 5px 0px;
+}
 /* ESTILO SHOWS */
 
 .portada4{
@@ -226,9 +248,15 @@ footer div{
     display: flex;
     align-items: center;
 }
-h2{
+.footer-privacidad{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+.terminos-condiciones{
+    color: white;
+    font-size: 20px;
     font-weight: 300;
     text-align: center;
 }
