@@ -1,0 +1,24 @@
+.header-index{
+    @include flex(none, space-between, center, none);
+    width: 100%;
+    height: 12.5rem;
+}
+.logo{
+    width: auto;
+    height: auto;
+}
+.navBar{
+    display: flex;
+    background-color: map-get($colores, color1);
+    gap: 1.5625rem;
+    list-style-type: none;
+    li a{
+        text-decoration: none;
+        color: map-get($colores, color4);
+        font-size: 1.875rem;
+        padding: 5px;
+        &:hover{
+            color: map-get($colores, color5);
+        }
+    }
+}

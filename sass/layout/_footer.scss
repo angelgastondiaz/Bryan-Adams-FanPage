@@ -1,0 +1,32 @@
+footer{
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 6.25rem;
+    background-color: map-get($colores, color1);
+}
+footer div{
+    width: 12.5rem;
+    display: flex;
+    align-items: center;
+}
+.footer-privacidad{
+    color: map-get($colores, color4);
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+}
+.terminos-condiciones{
+    color: map-get($colores, color4);
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+}
+.redes{
+    width: 25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 20px 0px 0px;
+}
