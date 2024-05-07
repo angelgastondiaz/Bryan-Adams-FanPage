@@ -1,74 +1,248 @@
 // Media Querry 1024 \\
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
+
     /* INICIO */
-    .contenedor-caja{
-        width: 70%;
+    .contenedor-caja {
+        width: 62%;
     }
-    .caja{
+
+    .caja {
         width: 30%;
     }
-    .texto{
-        width: 100%;
-        
+
+    .caja-img p {
+        line-height: 20px;
     }
-    .portada{
+
+    .texto {
+        width: 100%;
+
+    }
+
+    .portada {
         object-fit: cover;
         left: -300px;
     }
-        /* DISCOGRAFIA */
-        .contenedor3{
-            width: 100%;
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        flex-wrap: nowrap;
+
+        p {
+            font-size: 15px;
+            font-weight: 600;
         }
-        .contenedor-caja3{
-            width: 70%;
-        }
-        .caja3{
-            width: 30%;
-        }
-        p{
-            width: 100%;
-            font-size: 14px;
-        }
-        .portada3{
-            object-fit: cover;
-            left: -300px;
-        }
+    }
+
+    /* BIOGRAFIA */
+    .gridContenedor2 {
+        margin-top: 40px;
+    }
+
+    .gridContenedor2 h1 {
+        width: 91%;
+        height: 6%;
+        font-size: 25px;
+        margin-top: 15px;
+        padding-top: 5px;
+    }
+
+    .gridContenedor2 p {
+        height: 89%;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .gridContenedor footer p {
+        width: 30%;
+        font-size: .9375rem;
+        font-weight: 600;
+        padding: 20px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    /* DISCOGRAFIA */
+    .contenedor3 {
+        width: 100%;
+    }
+
+    .contenedor-caja3 {
+        width: 70%;
+    }
+
+    .caja3 {
+        width: 30%;
+    }
+
+    p {
+        width: 100%;
+        font-size: 12px;
+        padding: 13px;
+        line-height: 2;
+    }
+
+    .portada3 {
+        object-fit: cover;
+        left: -300px;
+    }
+
 
     /* SHOWS */
-    .contenedor4{
+    .contenedor4 {
         width: 64rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
     }
-    .contenedor-caja4{
+
+    .contenedor-caja4 {
         display: flex;
         flex-direction: column;
         align-content: flex-end;
-        padding:0%;
+        padding: 0%;
         width: 100%;
     }
-    .portada4{
+
+    .portada4 {
         width: 100%;
-        height: 522px;
-        object-fit:cover;
+        height: 536px;
+        object-fit: cover;
         position: absolute;
         clip-path: inset(0 31% 0 0);
         left: -13.6875rem;
         z-index: 1;
     }
-    .caja4{
+
+    .caja4 {
         display: flex;
         flex-direction: column;
         width: 50%;
         height: auto;
     }
-    .textoShow p{
-        font-size: 1.6875rem;
+
+    .textoShow p {
+        font-size: 20px;
     }
-    .caja4 p{
-        font-size: 1.6875rem;
+
+    .caja4 p {
+        font-size: 20px;
         padding: 10px 10px 10px 10px;
     }
+}
+
+/* TIENDA */
+.gridContenedor21{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    align-items: end;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 122px 40px 1fr;
+    grid-template-areas:  
+    "header header"
+    "main main"
+    "footer footer"
+    ;
+    img{
+        width: 8rem;
+        height: 8rem;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
+.gridContenedor21 header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    grid-area: header;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.gridContenedor21 main{
+    width: 100%;
+    height: 640px;
+    background-color: map-get($colores , color4);
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-row: 3/4;
+    margin-top: 40px;
+}
+
+.gridContenedor22 img{
+    width: 100%;
+    height: 640px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    object-fit: cover;
+}
+
+.cardsContainer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+    gap: 10px;
+    grid-column: 3/5;
+    grid-row: 1/2;
+    grid-template-areas:
+    "cardsContainer cardsContainer"
+    "cardsContainer cardsContainer"
+    ;
+    
+
+}
+.cards{
+    width: 100%;
+    height: 75%;
+    text-align: center;
+    background-color: map-get($colores , color4);
+    color: map-get($colores , color5);
+
+    img{
+        width: 230px;
+        height: 230px;
+    }
+}
+
+.gridContenedor22 button{
+    font-size: 10px;
+    width: 230px;
+    height: 40px;
+    background-color: map-get($colores , color5);
+    color: map-get($colores , color2);
+}
+
+
+.gridContenedor21 footer{
+    width: 100%;
+    height: 100px;
+    grid-area: footer;
+    grid-column: 1/5;
+    grid-row: 4/5;
+    margin-top: 20px;
+    p{
+        width: 12.5rem;
+        color: map-get($colores , color4);
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 300;
+        padding: 20px;
+    }
+}
+
+.redes img{
+    width: 55px;
+    height: 55px;
+    
 }
